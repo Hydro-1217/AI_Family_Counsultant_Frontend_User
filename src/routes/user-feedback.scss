@@ -1,0 +1,113 @@
+.wrap-user-feedback {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  //display: flex;
+  //flex-direction: column;
+  background: linear-gradient(180deg, #7C6C91 0%, #b0bcc0 100%);
+  //padding: 0 20px;
+
+  .wrap-login-title {
+    flex-shrink: 0; /* 不缩小 */
+    padding-top: 16px;
+    color: #fff;
+    border-bottom: 1px solid #dadada;
+  }
+
+  .wrap-login-opt {
+    padding: 24px 20px 0;
+    //margin-top: 8px;
+    //flex-grow: 1;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: flex-end;
+    //letter-spacing: 1px;
+
+    .wrap-tip {
+      width: 100%;
+      padding: 20px 12px;
+      background: variables.$color-btn-bg;
+      color: #fff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+      text-align: center;
+      border-radius: 4px;
+      h1 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+      }
+      p {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #dadada;
+      }
+    }
+
+    h2 {
+      margin-top: 24px;
+      color: #fff;
+      font-size: 18px;
+      border-left: 4px solid variables.$color-btn-bg;
+      padding-left: 8px;
+    }
+
+    .opt-wechat {
+      margin-top: 24px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 12px 12px;
+      background: #fff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+      border-radius: 4px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      span {
+        flex-grow: 1;
+        //text-align: center;
+        margin-left: 24px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .input-prompt {
+    width: 340px;
+    background: #FFFFFF;
+    padding: 2px 4px;
+    font-size: 8px;
+  }
+
+  .login_btn {
+    width: 256px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .login_btn_1 {
+    line-height: 50px;
+    padding-left: 25px;
+    font-size: 16px;
+    color: #999999;
+    background: #FFF4DF;
+    border: 1px solid #979797;
+  }
+
+  .login_btn_3 {
+    margin-top: 12px;
+    background: variables.$color-btn-bg;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}

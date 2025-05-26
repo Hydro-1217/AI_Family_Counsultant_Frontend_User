@@ -1,0 +1,89 @@
+@use "variables" as v;
+
+:root {
+  --adm-color-text: $color-btn-bg;
+}
+
+.van-root {
+  height: 100%;
+  margin: 0 auto;
+  background: v.$color-bg-normal;
+}
+
+@media screen and (max-width: 959px) {
+  .van-root {
+    min-width: 200px;
+    max-width: 959px;
+    min-height: 500px;
+    overflow: scroll;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a:visited, a:active {
+  text-decoration: none;
+}
+
+button, button:hover, button:active, button:focus {
+  outline: none;
+  border: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+// PC样式
+@media screen and (min-width: 960px) {
+  body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px; /* 设置滚动条的宽度 */
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent; /* 设置滚动条轨道的背景颜色 */
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1); /* 设置滚动条滑块的背景颜色 */
+    border-radius: 4px; /* 设置滚动条滑块的圆角 */
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3); /* 设置滚动条滑块悬停时的背景颜色 */
+  }
+}

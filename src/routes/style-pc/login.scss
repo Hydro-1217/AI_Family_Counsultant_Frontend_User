@@ -1,0 +1,137 @@
+// 手机&平板设备样式
+@media screen and (min-width: 960px) {
+  #root {
+    position: relative;
+    width: 1080px;
+    height: 680px;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; // 水平居中
+  }
+
+  .wrap-login {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/login-bg-pc.jpg');
+    //background-position: center; // 确保背景图居中
+    //background-size: cover;
+    //background-image: url('@/assets/登录背景.jpg');
+    background-position: center; // 确保背景图居中
+    background-size: cover;
+    //background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    //margin: 0 auto;
+
+
+    .wrap-login-title {
+      position: absolute;
+      top: 26px;
+      right: 26px;
+      background: rgba(255,255,255,0.34);
+      width: 235px;
+      height: 102px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 40px;
+        color: #504339;
+        letter-spacing: 0;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(255,170,50,0.50);
+      }
+
+      h2 {
+        font-size: 20px;
+        color: #3ECBC0;
+        letter-spacing: 0;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(255,170,50,0.50);
+      }
+    }
+
+
+    .wrap-login-opt {
+      margin-bottom: 95px;
+      width: 420px;
+      height: 378px;
+      padding-top: 30px;
+      background: rgba(216,216,216,0.84);
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      letter-spacing: 1px;
+
+      h3 {
+        font-size: 24px;
+        color: rgba(61,6,60,0.85);
+        margin-bottom: 28px;
+      }
+
+      .login_btn {
+        font-size: 16px;
+        color: #999999;
+        letter-spacing: 0;
+        background: #FFF4DF;
+        border: 1px solid #979797;
+        border-radius: 25px;
+        width: 256px;
+        height: 50px;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+
+      .adm-input-element {
+        font-size: 16px !important;
+      }
+
+      .login_btn_1 {
+        line-height: 50px;
+        padding: 0 25px;
+        font-size: 16px !important;
+        color: #999999;
+        background: #FFF4DF;
+        border: 1px solid #979797;
+      }
+
+      .login_btn_2 {
+        line-height: 50px;
+        padding: 0 25px;
+        font-size: 16px !important;
+        color: #999999;
+        background: #FFF4DF;
+        border: 1px solid #979797;
+      }
+
+      .login_btn_3 {
+        background: variables.$color-btn-bg;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      .login_btn_4 {
+        font-size: 16px;
+        color: variables.$color-btn-bg;
+        letter-spacing: 0;
+        text-align: center;
+        background: #B8CBD9;
+
+        a {
+          &:active, &:visited {
+            color: #1D6D64;
+          }
+        }
+      }
+    }
+  }
+}
+
