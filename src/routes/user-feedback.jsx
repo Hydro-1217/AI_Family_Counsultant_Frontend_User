@@ -28,22 +28,22 @@ export default function Root() {
   return (<>
     <div className="wrap-user-feedback">
       <div className="wrap-login-title">
-        <NavBar back='返回' onBack={() => navigate("/chat")}>
-          用户反馈
+        <NavBar back='返回 / Back' onBack={() => navigate("/chat")}>
+          用户反馈 / Feedback
         </NavBar>
       </div>
       <div className="wrap-login-opt">
         <div className="wrap-tip">
-          <h1>联系我们</h1>
-          <p>扫描下方二维码加入用户群与开发者进行交流</p>
+          <h1>联系我们 / Contact Us</h1>
+          <p>扫描下方二维码加入用户群与开发者进行交流 / Scan the QR code to join the user community.</p>
         </div>
 
         <h2>
-          用户沟通群
+          用户沟通群 / User Community
         </h2>
         <div className="opt-wechat">
           <img src={userFeedbackWechatImg} alt="二维码"/>
-          <span>AI家庭顾问用户沟通群</span>
+          <span>AI家庭顾问用户沟通群 / AI Family Counselor Community</span>
         </div>
       </div>
     </div>

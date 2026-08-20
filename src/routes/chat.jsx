@@ -590,14 +590,14 @@ export default function Root() {
 
   const [actionVisible, setActionVisible] = useState(false);
   const actions = [{
-    text: '查看分析报告',
+    text: '查看分析报告 / View Report',
     key: 'report-view',
     onClick: () => {
       setActionVisible(false)
       exportReport().then(r => r)
     }
   }, {
-    text: <>{reportGenerating ? <DotLoading/> : null}生成分析报告</>,
+    text: <>{reportGenerating ? <DotLoading/> : null}生成分析报告 / Generate Report</>,
     key: 'report-generate',
     onClick: () => {
       setActionVisible(false)
@@ -607,20 +607,20 @@ export default function Root() {
       handleGenerateReport().then(r => r)
     }
   }, {
-    text: '导出聊天记录',
+    text: '导出聊天记录 / Export Chat',
     key: 'export-records',
     onClick: () => {
       setActionVisible(false);
       exportChatRecords()
     }
   }, {
-    text: '用户反馈',
+    text: '用户反馈 / Feedback',
     key: 'user-feedback',
     onClick: () => {
       navigate("/user-feedback")
     }
   }, {
-    text: '退出登录',
+    text: '退出登录 / Sign Out',
     key: 'logout',
     danger: true,
     onClick: mixLoginJump
@@ -804,25 +804,25 @@ export default function Root() {
                 className="opt-export-wrap opt-export-wrap-1"
                 onClick={mixLoginJump}
             >
-              退出登录
+              退出登录 / Sign Out
             </div>
             <div
                 className="opt-export-wrap opt-export-wrap-2"
                 onClick={exportChatRecords}
             >
-              导出聊天记录
+              导出聊天记录 / Export Chat
             </div>
             <div
                 className="opt-export-wrap opt-export-wrap-3"
                 onClick={handleGenerateReport}
             >
-              {reportGenerating ? <DotLoading/> : null}生成分析报告
+              {reportGenerating ? <DotLoading/> : null}生成分析报告 / Generate Report
             </div>
             <div
                 className="opt-export-wrap opt-export-wrap-4"
                 onClick={exportReport}
             >
-              查看分析报告
+              查看分析报告 / View Report
             </div>
           </div>
         </div>
@@ -842,8 +842,8 @@ export default function Root() {
                     }
                   }}>
                     {/*<Menu.Item key="edit">编辑内容</Menu.Item>*/}
-                    <Menu.Item key="copy">复制</Menu.Item>
-                    <Menu.Item key="play">播放</Menu.Item>
+                    <Menu.Item key="copy">复制 / Copy</Menu.Item>
+                    <Menu.Item key="play">播放 / Play</Menu.Item>
                   </Menu>
               );
               return (
@@ -871,12 +871,12 @@ export default function Root() {
                       actions={[
                         {
                           key: 'copy',
-                          text: '复制',
+                          text: '复制 / Copy',
                           onClick: () => handleTextCopy(content)
                         },
                         {
                           key: 'play',
-                          text: '播放',
+                          text: '播放 / Play',
                           onClick: () => {
                             handleTextPlay(content)
                           }
@@ -985,7 +985,7 @@ export default function Root() {
                   //     handleAudioEnd();
                   //   }
                   // }}
-                  placeholder={currentVoiceStatus !== VOICE_STATUS.NONE ? '按住说话' : '请输入你想说的话'}
+                  placeholder={currentVoiceStatus !== VOICE_STATUS.NONE ? '按住说话 / Hold to Talk' : '请输入你想说的话 / Type a message'}
                   // placeholder="请输入你想说的话"
               />
           )}
@@ -994,7 +994,7 @@ export default function Root() {
                   disabled={currentQuestionSuggestions && currentQuestionSuggestions.length}
                   className="footer-text-area"
                   value={sendText}
-                  placeholder="Shift+Enter换行，Enter发送"
+                  placeholder="Shift+Enter 换行，Enter 发送 / Shift+Enter for newline, Enter to send"
                   onChange={value => setSendText(value)}
                   onKeyDown={handleKeyDown}
               />

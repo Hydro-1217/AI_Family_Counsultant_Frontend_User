@@ -53,19 +53,19 @@ export default function Login() {
       </div>
 
       <div className="wrap-login-opt">
-        <h3>登录</h3>
+        <h3>登录 / Sign In</h3>
 
         <Input
-            inputMode="latin" className="login_btn login_btn_1" placeholder="用户名"
+            inputMode="latin" className="login_btn login_btn_1" placeholder="用户名 / Username"
             onChange={setUsername}
         />
         <Input
-            type="password" className="login_btn login_btn_2" placeholder="密码"
+            type="password" className="login_btn login_btn_2" placeholder="密码 / Password"
             onChange={setPassword}
             onEnterPress={handleLogin}
         />
-        <button className="login_btn login_btn_3" onClick={handleLogin}>登录</button>
-        <button className="login_btn login_btn_4" onClick={() => navigate("/register")}>立即注册</button>
+        <button className="login_btn login_btn_3" onClick={handleLogin}>登录 / Sign In</button>
+        <button className="login_btn login_btn_4" onClick={() => navigate("/register")}>立即注册 / Register</button>
       </div>
     </div>
   </>);

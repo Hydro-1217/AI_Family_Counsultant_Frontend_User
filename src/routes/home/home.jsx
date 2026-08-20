@@ -34,14 +34,14 @@ export default function Root() {
       <img src={homeUrl} alt="home"/>
 
       <button className="home_btn home_btn_1" onClick={navToFamilyCreate}>
-        创建新家庭
+        创建新家庭 / Create Family
       </button>
 
       <div className="home_btn home_btn_split"/>
 
       <input
           className="home_btn home_btn_2"
-          placeholder="输入家庭码"
+          placeholder="输入家庭码 / Enter Family Code"
           onChange={e => setFamilyCode(e.target.value)}
       />
 
@@ -49,7 +49,7 @@ export default function Root() {
           className="home_btn home_btn_3"
           onClick={handleAddToFamily}
       >
-        加入家庭
+        加入家庭 / Join Family
       </button>
     </div>
   </>);

@@ -58,7 +58,7 @@ export default function Root() {
 
   return (<>
     <div className="role-select-wrap">
-      <p>请选择你在家庭中的角色</p>
+      <p>请选择你在家庭中的角色 / Select Your Family Role</p>
       <ul>
         {selectedRoleTypes.map(({name, secondName, roleType, imgUrl, bgColor}) => {
           return (
@@ -75,7 +75,7 @@ export default function Root() {
         })}
       </ul>
       <div className="wrap-btn">
-        <button onClick={handleAddFamilyAndCreate}>确定</button>
+        <button onClick={handleAddFamilyAndCreate}>确定 / Confirm</button>
       </div>
     </div>
   </>);

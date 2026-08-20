@@ -47,21 +47,21 @@ export default function Root() {
       </div>
 
       <div className="wrap-login-opt">
-        <h3>注册</h3>
+        <h3>注册 / Register</h3>
 
         <input
-            inputMode="latin" className="login_btn login_btn_1" placeholder="用户名"
+            inputMode="latin" className="login_btn login_btn_1" placeholder="用户名 / Username"
             onChange={e => setUsername(e.target.value)}
         />
         <input
-            type="password" className="login_btn login_btn_2" placeholder="密码"
+            type="password" className="login_btn login_btn_2" placeholder="密码 / Password"
             onChange={e => setPassword(e.target.value)}
         />
         <input
-            type="password" className="login_btn login_btn_2" placeholder="确认密码"
+            type="password" className="login_btn login_btn_2" placeholder="确认密码 / Confirm Password"
             onChange={e => setConfirmPassword(e.target.value)}
         />
-        <button className="login_btn login_btn_3" onClick={handleRegister}>点击注册</button>
+        <button className="login_btn login_btn_3" onClick={handleRegister}>点击注册 / Register</button>
       </div>
     </div>
   </>);

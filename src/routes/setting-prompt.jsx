@@ -25,8 +25,8 @@ export default function Root() {
   return (<>
     <div className="wrap-setting-prompt">
       <div className="wrap-login-title">
-        <NavBar back='返回' onBack={() => navigate("/chat")}>
-          提示词设置
+        <NavBar back='返回 / Back' onBack={() => navigate("/chat")}>
+          提示词设置 / Prompt Settings
         </NavBar>
       </div>
       <div className="wrap-login-opt">
@@ -35,11 +35,11 @@ export default function Root() {
             autoFocus
             value={systemPrompt}
             className="input-prompt"
-            placeholder="请输入提示词"
+            placeholder="请输入提示词 / Enter prompt"
             onChange={setSystemPrompt}
         />
-        <button className="login_btn login_btn_3" onClick={handleSetNewPromptAndStarNewSession}>开启新会话</button>
-        <button className="login_btn login_btn_4" onClick={() => navigate("/chat")}>返回聊天</button>
+        <button className="login_btn login_btn_3" onClick={handleSetNewPromptAndStarNewSession}>开启新会话 / Start New Chat</button>
+        <button className="login_btn login_btn_4" onClick={() => navigate("/chat")}>返回聊天 / Back to Chat</button>
       </div>
     </div>
   </>);

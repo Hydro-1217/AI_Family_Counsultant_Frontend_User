@@ -11,8 +11,8 @@ export default function Root() {
       </div>
 
       <div className="wrap-login-opt">
-        <p>每个人都有迷茫困惑，来跟我说说吧😊</p>
-        <button className="login_btn login_btn_3" onClick={() => navigate("/chat")}>进入AI聊天室</button>
+        <p>每个人都有迷茫困惑，来跟我说说吧😊<br />Everyone has questions—let's talk.</p>
+        <button className="login_btn login_btn_3" onClick={() => navigate("/chat")}>进入 AI 聊天室 / Enter AI Chat</button>
       </div>
     </div>
   </>);

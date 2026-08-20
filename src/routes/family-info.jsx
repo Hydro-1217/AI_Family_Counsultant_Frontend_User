@@ -31,10 +31,10 @@ export default function Root() {
     <div className="wrap-family-info">
       <img src={homeUrl} alt="home"/>
       <div className="home_btn home_btn_split"/>
-      <div>家庭ID: {id}</div>
-      <div>家庭名称: {name}</div>
-      <div>家庭码: {code}</div>
-      <div>家庭成员</div>
+      <div>家庭 ID / Family ID: {id}</div>
+      <div>家庭名称 / Family Name: {name}</div>
+      <div>家庭码 / Family Code: {code}</div>
+      <div>家庭成员 / Family Members</div>
       <ul>
         {familyMembers && familyMembers.map(({id, role, userId}, index) => (
             <li key={index}>ID:{id} Role:{role} userId:{userId}</li>
@@ -44,13 +44,13 @@ export default function Root() {
           className="home_btn home_btn_3"
           onClick={() => navigate("/enter-welcome")}
       >
-        返回聊天
+        返回聊天 / Back to Chat
       </button>
       <button
           className="home_btn home_btn_3"
           onClick={mixLoginJump}
       >
-        退出登录
+        退出登录 / Sign Out
       </button>
     </div>
   </>);

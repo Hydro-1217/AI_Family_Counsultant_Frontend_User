@@ -57,23 +57,23 @@ export default function Root() {
       <div className="home_btn home_btn_split"/>
       <input
           className="home_btn home_btn_2"
-          placeholder="请输入家庭名称"
+          placeholder="请输入家庭名称 / Family Name"
           onChange={e => setFamilyName(e.target.value)}
       />
       <button
           className="home_btn home_btn_3"
           onClick={handleCreateFamily}
       >
-        生成家庭码
+        生成家庭码 / Generate Code
       </button>
       {!!newFamilyCode && (
           <>
-            <p onClick={handleCopy}>{newFamilyCode}<span>复制</span></p>
+            <p onClick={handleCopy}>{newFamilyCode}<span>复制 / Copy</span></p>
             <button
                 className="home_btn home_btn_4"
                 onClick={() => navigate("/role-select")}
             >
-              确定
+              确定 / Confirm
             </button>
           </>
       )}
